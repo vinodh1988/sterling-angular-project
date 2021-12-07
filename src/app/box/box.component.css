@@ -1,8 +1,18 @@
-.box{
+.theme1{
     height: 200px;
     width: 200px;
     padding: 20px;
     margin: 20px;
     float: left;
     background-color: lightgreen;
+}
+
+
+.theme2{
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    float: left;
+    background-color: rgb(238, 144, 230);
 }
