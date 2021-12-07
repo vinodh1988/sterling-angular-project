@@ -1,7 +1,6 @@
-<h1>APP</h1>
-<app-box></app-box>
-<app-box></app-box>
-<app-box></app-box>
-<app-box></app-box>
-<app-box></app-box>
-<app-box></app-box>
+<h1>{{title}}</h1>
+<ul>
+  <li *ngFor="let x of people">{{x}}</li>
+</ul>
+<br/>
+<app-box *ngFor="let x of [0,1,2,3,4,5,6,7,8,9]"></app-box>

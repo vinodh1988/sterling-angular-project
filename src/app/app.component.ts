@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first-app';
-
+  people=['Rahul','Rajan','Ramesh','Rakesh','Ajay','Ashok','Ashish']
+  
   handleClick(){
-    
+
   }
 }
