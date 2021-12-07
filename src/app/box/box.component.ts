@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoxComponent implements OnInit {
 theme:string="theme1"
-
+color:string="black";
   constructor() { }
 
   ngOnInit(): void {
