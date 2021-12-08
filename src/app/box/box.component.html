@@ -4,5 +4,9 @@
     <h3 [style.color]="'darkred'" (click)="toggle('theme2')">Theme2</h3>
     <h4>Text Text Text</h4>
     <input type="text" [(ngModel)]="color"/>
-
+ <hr/>
+ <h4>{{boxtitle}}</h4>
+ <ul>
+   <li *ngFor="let x of items">{{x}}</li>
+</ul>
 </div>

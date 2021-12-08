@@ -8,6 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'first-app';
   people=['Rahul','Rajan','Ramesh','Rakesh','Ajay','Ashok','Ashish']
+  boxes:string[]=['Vegetables','Fruits','Spices']
+  items:string[][]=[
+    ['Potato','Tomato','Onion','Chilli'],
+    ['Grapes','Banana','Orange','Mango'],
+    ['Pepper','Cinnamon','Cummin']
+  ]
   
   handleClick(){
 
