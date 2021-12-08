@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-box',
@@ -10,7 +10,7 @@ theme:string="theme1"
 color:string="black";
 @Input('title') boxtitle:string="";
 @Input() items:string[]=[];
-
+@Output() sendItem:EventEmitter<string>=new EventEmitter<string>();
   constructor() { }
 
   ngOnInit(): void {
@@ -18,6 +18,10 @@ color:string="black";
 
   toggle(theme:string){
     this.theme=theme
+  }
+
+  capture(x:string){
+      this.sendItem.emit(x)
   }
 
 }

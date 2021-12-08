@@ -2,6 +2,8 @@
 <ul>
   <li *ngFor="let x of people">{{x}}</li>
 </ul>
+<h3 [style.color]="'blue'">{{message}}</h3>
 <br/>
 <app-box *ngFor="let x of boxes;let y=index" [title]="x" 
-[items]="items[y]" >{{x}}</app-box>
+[items]="items[y]" 
+(sendItem)="handle($event)">{{x}}</app-box>

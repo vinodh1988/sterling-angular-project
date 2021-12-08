@@ -14,8 +14,10 @@ export class AppComponent {
     ['Grapes','Banana','Orange','Mango'],
     ['Pepper','Cinnamon','Cummin']
   ]
-  
-  handleClick(){
 
+  message="The last item you have selected is nothing"
+  
+  handle(x:string){
+   this.message= "The last item you have selected is "+x;
   }
 }

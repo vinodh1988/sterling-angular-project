@@ -7,6 +7,6 @@
  <hr/>
  <h4>{{boxtitle}}</h4>
  <ul>
-   <li *ngFor="let x of items">{{x}}</li>
+   <li *ngFor="let x of items"(click)="capture(x)">{{x}}</li>
 </ul>
 </div>
